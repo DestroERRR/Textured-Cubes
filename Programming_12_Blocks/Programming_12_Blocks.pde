@@ -16,8 +16,10 @@ void draw() {
   background(0);
   
   texturedCube(width/2, height/2 , 0 , diamond, 100);
-  
-  texturedCube(width/2, 100, 0, grassTop, grassSide, dirt, 100);
+  texturedCube(100, 200, 0, diamond, dirt, grassTop, 100);
+  texturedCube(200, 400, 100, dirt, grassSide, diamond, 100); 
+  texturedCube(300, 300, 0, grassTop, diamond, diamond, 100);
+  texturedCube(width/2, 100, 0, grassTop, grassSide, dirt, 100); //top side bottom
 }
 
 void texturedCube( float x, float y, float z, PImage texture, float size){
